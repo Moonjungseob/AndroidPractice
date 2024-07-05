@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ch06_view.Ch6MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--            android:text="오늘 점심은 ? 닭칼 먹었어요, 엄청 매움 ㅠㅠ"-->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lunch_today"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food1"/>
+
+        <Button
+            android:id="@+id/sampleBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="샘플 버튼1"/>
+        <Button
+            android:id="@+id/sampleBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="샘플 버튼2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lunch_introduce"
+            android:autoLink="web|phone|email"/>
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

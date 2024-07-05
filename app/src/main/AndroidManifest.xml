@@ -1,17 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- 퍼미션 관련 설정 예 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 미디어 정보 접근을 위한 퍼미션 변경 공식 문서 -->
+    <!-- https://developer.android.com/about/versions/14/changes/partial-photo-video-access?hl=ko -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- <uses-permission android:name="android.permission.BATTERY_STATS"/> -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 진동관련 퍼미션 추가 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 알림 채널 관련 퍼미션 설정 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/travel_icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLapTest2"
         tools:targetApi="31">
+        <activity
+            android:name=".ch09_resources.Ch09MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch08_event.Ch08MainEvent2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ch08_event.Ch08MainEvent1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ch07_layout.Ch07MainGridActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch07_layout.Ch07MainFrameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch07_layout.Ch07MainConstraintActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch07_layout.Ch07Main3RelaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch07_layout.Ch07Main3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ch07_layout.Ch07Main2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ch07_layout.Ch07MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch06_view.Ch06Test2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ch06_view.Ch06TestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch06_view.Ch6MainActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name=".ch10_dialog_permission.ReplyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".ch10_dialog_permission.OneReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".miniProject.lsy1205_mini.Lsy1205LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".miniProject.lsy1205_mini.Lsy1205JoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".miniProject.lsy1205_mini.Lsy1205MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch10_dialog_permission.Ch10MainActivity"
+            android:exported="true" />
         <activity
             android:name=".TestActivity"
             android:exported="true" />
