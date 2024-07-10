@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.busanit501.androidlaptest2.R
 import com.busanit501.androidlaptest2.databinding.ActivityCh11MainRecyclerView1Binding
 
@@ -122,9 +123,50 @@ class Ch11MainRecyclerView1MainActivity : AppCompatActivity() {
             ,2, GridLayoutManager.VERTICAL,false)
         binding.ch11RecyclerSample5.layoutManager = layoutManager5
 
+
         // 어댑터 붙이기.
         val customAdapter2 = Ch11MyAdapterSample4(datas3)
         binding.ch11RecyclerSample5.adapter = customAdapter2
+
+        // 6번째 리사이클러뷰
+        // 3번째 리사이클러뷰 재사용. 어댑터 , 뷰홀더 , 목록의요소도 재사용
+        val layoutManager6 = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        binding.ch11RecyclerSample6.layoutManager = layoutManager6
+
+        // 3번째 리사이클러뷰
+        val datas4 = mutableListOf<String>()
+        for(i in 1..10) {
+            if(i %3==0){
+                datas4.add("오늘 점심 뭐먹지2=============== ? $i")
+            }
+            if(i%3==1){
+                datas4.add("오늘 점심 뭐먹지2 ? ===$i")
+            }
+            else if(i%3==2){
+                datas4.add("오늘 점심 뭐먹지2================ ? $i")
+            }
+            datas4.add("오늘 점심 뭐먹지2 ? $i")
+
+
+        }
+        // 어댑터 붙이기.
+        val customAdapter3 = Ch11MyAdapterSample4(datas4)
+        binding.ch11RecyclerSample6.adapter = customAdapter3
+
+        // 7번째 리사이클러뷰
+        // 3번째 리사이클러뷰 재사용. 어댑터 , 뷰홀더 , 목록의요소도 재사용
+        val layoutManager7 = LinearLayoutManager(this@Ch11MainRecyclerView1MainActivity)
+        layoutManager7.orientation = LinearLayoutManager.VERTICAL
+        binding.ch11RecyclerSample7.layoutManager = layoutManager7
+
+        // 어댑터 붙이기.
+        val customAdapter7 = Ch11MyAdapterSample4(datas3)
+        binding.ch11RecyclerSample7.adapter = customAdapter7
+
+// 데코레이션 옵션 붙이기 작업.
+        binding.ch11RecyclerSample7.addItemDecoration(MyDecoration(this@Ch11MainRecyclerView1MainActivity))
+
+
 
 
     } //onCreate
