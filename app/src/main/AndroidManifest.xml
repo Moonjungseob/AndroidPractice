@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.busanit501.androidlaptest2">
     <!-- 퍼미션 관련 설정 예 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -26,6 +27,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLapTest2"
         tools:targetApi="31">
+        <activity
+            android:name=".ch13_intent.TestCoroutineActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch13_intent.TestIntent2DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch13_intent.TestIntentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch13_intent.TestBundleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch11_jecpack.ch11_ch12_drawer_navi_faBtn_tab_appbar.tabTest.Ch11_12TabTestMainActivity"
+            android:exported="true" />
         <activity
             android:name=".ch11_jecpack.ch11_ch12_drawer_navi_faBtn_tab_appbar.Ch11_Ch12_MixMainActivity"
             android:exported="true" />
