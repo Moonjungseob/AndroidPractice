@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.busanit501.androidlaptest2.databinding.FragmentCh111Binding
 
-import com.busanit501.androidlaptest2.databinding.FragmentCh11OneBinding
-
 
 class Ch11Fragment1 : Fragment() {
 

@@ -6,9 +6,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.busanit501.androidlaptest2.ch11_jecpack.fragments.Ch11Fragment1
 import com.busanit501.androidlaptest2.ch11_jecpack.fragments.Ch11Fragment2
 import com.busanit501.androidlaptest2.ch11_jecpack.fragments.Ch11Fragment3
-import com.busanit501.androidlaptest2.ch11_jecpack.fragments.Ch11OneFragment
-import com.busanit501.androidlaptest2.ch11_jecpack.fragments.Ch11ThreeFragment
-import com.busanit501.androidlaptest2.ch11_jecpack.fragments.Ch11TwoFragment
 
 class MyViewpagerFragmentAdapter2(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
 

@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.busanit501.androidlaptest2.R
-import com.busanit501.androidlaptest2.databinding.FragmentTabTest2Binding
 import com.busanit501.androidlaptest2.databinding.FragmentTabTest4Binding
 
 class TabTest4Fragment : Fragment() {

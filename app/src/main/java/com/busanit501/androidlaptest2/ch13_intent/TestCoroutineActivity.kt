@@ -2,11 +2,7 @@ package com.busanit501.androidlaptest2.ch13_intent
 
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.busanit501.androidlaptest2.R
 import com.busanit501.androidlaptest2.databinding.ActivityTestCoroutineBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

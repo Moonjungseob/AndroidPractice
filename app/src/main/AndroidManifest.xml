@@ -6,7 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 미디어 정보 접근을 위한 퍼미션 변경 공식 문서 -->
-    <!-- https://developer.android.com/about/versions/14/changes/partial-photo-video-access?hl=ko -->
+    <!-- 연락처 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 외부 저장소 접근 권한 -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" /> <!-- 외부 통신 하기위해서 인터넷 퍼미션 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- https://developer.android.com/about/versions/14/changes/partial-photo-video-access?hl=ko -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
     <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- <uses-permission android:name="android.permission.BATTERY_STATS"/> -->
@@ -27,6 +30,60 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLapTest2"
         tools:targetApi="31">
+        <activity
+            android:name=".ch17_2_room.Ch17RoomMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch18_2_pagingTest.PagingTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch18_network.TestSpringActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch18_network.PublicDataTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch18_network.NewsApiTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch18_network.HttpTestReqResActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch17_SQLiteDB.SharedPreferTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch17_SQLiteDB.SharedPrefDetailTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch17_SQLiteDB.DbTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ch16_contentProvider.Ch16ImageLoadTestMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch16_contentProvider.Ch16ContactMainActivity"
+            android:exported="true" /> <!-- <provider -->
+        <!-- android:name=".ch16_contentProvider.MyContentProvider" -->
+        <!-- android:authorities="com.busanit501.androidlabtest5" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" /> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.busanit501.androidlaptest2.fileprovider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ch16_contentProvider.Ch16MultiImageRecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ch16_contentProvider.Ch16TestImageActivity"
+            android:exported="true" />
         <activity
             android:name=".ch13_intent.TestCoroutineActivity"
             android:exported="true" />

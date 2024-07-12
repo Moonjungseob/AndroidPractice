@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.busanit501.androidlaptest2.databinding.Ch11ItemSimpleRecycler2Binding
-import com.busanit501.androidlaptest2.databinding.Ch11ItemSimpleRecyclerBinding
 
 class Ch11MyAdapterSample2(val datas: MutableList<String> ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     // 어댑터에 뷰홀더 연결하기.

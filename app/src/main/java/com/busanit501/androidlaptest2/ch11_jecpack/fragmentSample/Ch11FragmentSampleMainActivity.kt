@@ -1,10 +1,7 @@
 package com.busanit501.androidlaptest2.ch11_jecpack.fragmentSample
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentTransaction
 import com.busanit501.androidlabtest501.ch11_jetpack.fragmentSample.FourthFragment
 import com.busanit501.androidlabtest501.ch11_jetpack.fragmentSample.SecondFragment

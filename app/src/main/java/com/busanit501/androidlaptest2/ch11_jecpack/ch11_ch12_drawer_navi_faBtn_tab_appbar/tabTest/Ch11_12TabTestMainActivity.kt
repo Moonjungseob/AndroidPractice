@@ -7,9 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.busanit501.androidlaptest2.R
-import com.busanit501.androidlaptest2.ch11_jecpack.ch11_ch12_drawer_navi_faBtn_tab_appbar.ViewPageAdapterTest
 import com.busanit501.androidlaptest2.databinding.ActivityCh1112TabTestMainBinding
-import com.busanit501.androidlaptest2.databinding.Ch11ItemSimpleRecycler4Binding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 

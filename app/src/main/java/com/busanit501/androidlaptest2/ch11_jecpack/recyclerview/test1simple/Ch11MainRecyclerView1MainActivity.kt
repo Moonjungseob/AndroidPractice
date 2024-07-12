@@ -1,7 +1,6 @@
 package com.busanit501.androidlaptest2.ch11_jecpack.recyclerview.test1simple
 
 import android.os.Bundle
-import android.widget.GridLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat

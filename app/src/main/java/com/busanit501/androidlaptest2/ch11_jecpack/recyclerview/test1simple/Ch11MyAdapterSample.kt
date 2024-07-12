@@ -3,7 +3,6 @@ package com.busanit501.androidlaptest2.ch11_jecpack.recyclerview.test1simple
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.busanit501.androidlaptest2.R
 import com.busanit501.androidlaptest2.databinding.Ch11ItemSimpleRecyclerBinding
 
 // 더미 데이터를 넣기, 단순, 텍스트 타입의 리스트를 매개변수로 정하기. ex) List<String>

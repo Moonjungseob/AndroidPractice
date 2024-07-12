@@ -1,6 +1,5 @@
 package com.busanit501.androidlabtest501.ch3_4_5
 
-import com.busanit501.androidlabtest501.ch3_4_5.DataClass.SuperClass
 import com.busanit501.androidlaptest2.ch3_4_5.name
 
 class Test2 {

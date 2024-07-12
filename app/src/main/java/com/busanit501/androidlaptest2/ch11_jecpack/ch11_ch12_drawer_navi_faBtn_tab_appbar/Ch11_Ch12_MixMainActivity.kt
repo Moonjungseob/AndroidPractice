@@ -9,8 +9,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.busanit501.androidlaptest2.R
 import com.busanit501.androidlaptest2.databinding.ActivityCh11Ch12MixMainBinding

@@ -6,13 +6,9 @@ import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.inputmethod.InputMethodManager
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.busanit501.androidlaptest2.R
 import com.busanit501.androidlaptest2.databinding.ActivityTestIntentBinding
 
 class TestIntentActivity : AppCompatActivity() {

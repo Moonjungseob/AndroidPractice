@@ -19,27 +19,22 @@ import android.os.Bundle
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.os.VibratorManager
-import android.renderscript.ScriptGroup.Binding
 import android.util.Log
 import android.widget.DatePicker
 import android.widget.TimePicker
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
-import androidx.core.app.RemoteInput
 import androidx.core.content.ContextCompat
-import androidx.core.content.getSystemService
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.busanit501.androidlaptest2.R
 import com.busanit501.androidlaptest2.databinding.ActivityCh10MainBinding
 import com.busanit501.androidlaptest2.miniProject.lsy1205_mini.Lsy1205MainActivity
-import java.time.MonthDay
 
 class Ch10MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityCh10MainBinding
